@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram profile interface</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="header-menu">
+            <div id="username-box">
+                <div id="username-text">
+                    <h2>mateushenrique_3</h2>
+                </div>
+                <div id="username-icon">
+                    <img src="./img/arrow-down.svg" alt="show-more">
+                </div>
+            </div>
+            <div id="header-action-buttons">
+                <div id="more-button">
+                    <img id="more-img" src="./img/add.svg" alt="plus-icon">
+                </div>
+                <div id="list-button">
+                    <img id="list-img" src="./img/menu.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="profile">
+            <div id="profile-info">
+                <div id="profile-img">
+                    <img id="profile-avatar" src="./img/profile.png" alt="">
+                </div>
+                <div id="profile-numbers">
+                    <div  class="profile-stats" id="profile-posts">
+                        <h3>14</h3>
+                        <p>Publicações</p>
+                    </div>
+                    <div class="profile-stats" id="profile-followers">
+                        <h3>426</h3>
+                        <p>Seguidores</p>
+                    </div>
+                    <div class="profile-stats" id="profile-follows">
+                        <h3>463</h3>
+                        <p>Seguindo</p>
+                    </div>
+                </div>
+            </div>
+            <div id="bio">
+                <div id="name">
+                    <h3>Mateus Henrique</h3>
+                </div>
+                <div id="profile-type">
+                    <p>Blog pessoal</p>
+                </div>
+                <div id="bio-description">
+                    <p>037 // 🇧🇷</p>
+                    <p>💻 Técnico em informática - CEFET-MG🎓</p>
+                    <p>🖥️ Ciência da computação - UFMG📓📝</p>
+                </div>
+            </div>
+            <div id="profile-buttons">
+                <div>
+                    <div class="profile-button">
+                        <h3>Editar perfil</h3>
+                    </div>
+                    <div class="profile-button">
+                        <h3>Promoções</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile-button">
+                        <h3>Insights</h3>
+                    </div>
+                    <div class="profile-button">
+                        <h3>Salvos</h3>
+                    </div>
+                    <div class="profile-button">
+                        <h3>Contato</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="stories">
+                <div class="story">
+                    <div class="story-img">
+                        <img class="story-avatar" src="./img/taekwondo.jpg" alt="">
+                    </div>
+                    <p>Taekwondo</p>
+                </div>
+                <div class="story">
+                    <div class="story-img">
+                        <img class="story-avatar" src="./img/natacao.jpeg" alt="">
+                    </div>
+                    <p>Natação</p>
+                </div>
+                <div class="story">
+                    <div class="story-img">
+                        <img class="story-avatar" src="./img/volei.jpg" alt="">
+                    </div>
+                    <p>Vôlei</p>
+                </div>
+                <div class="story">
+                    <div class="story-img">
+                        <img class="story-avatar" src="./img/futebol.jpg" alt="">
+                    </div>
+                    <p>Futebol</p>
+                </div>
+                <div class="story">
+                    <div class="story-img">
+                        <img class="story-avatar" src="./img/cefet.jpg" alt="">
+                    </div>
+                    <p>CEFET</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="posts">
+            <div id="navigation-icons">
+                <div id="grid-menu">
+                    <img id="grid-menu-icon" src="./img/grid-menu.svg" alt="">
+                </div>
+                <div id="tagged-posts-menu">
+                    <img id="tagged-posts-icon" src="data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjRkZGRkZGIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgZGlzcGxheT0ibm9uZSI+PHBvbHlnb24gZGlzcGxheT0iaW5saW5lIiBwb2ludHM9Ijc2LjIsNDYuOCAzNi4yLDQ2LjggNTYuMiwyNi44IDUxLjYsMjIuMiAyMy44LDUwIDUxLjYsNzcuOCA1Ni4yLDczLjIgICAgMzYuMiw1My4yIDc2LjIsNTMuMiAgIj48L3BvbHlnb24+PHBhdGggZGlzcGxheT0iaW5saW5lIiBkPSJNNzQuNywzMC4ySDYwLjFMNTAsMjAuMWMwLDAtNS44LDUuOC0xMC4xLDEwLjFIMjUuM2MtMi43LDAtNC44LDIuMi00LjgsNC44djQwYzAsMi43LDIuMiw0LjgsNC44LDQuOCAgIGg0OS40YzIuNywwLDQuOC0yLjIsNC44LTQuOFYzNUM3OS41LDMyLjQsNzcuNCwzMC4yLDc0LjcsMzAuMnogTTUwLDM5LjVjMi42LDAsNS44LDIsNS44LDcuNGMwLDQuNC0yLjEsOC41LTUuOCw4LjUgICBzLTUuOC00LjEtNS44LTguNUM0NC4yLDQxLjUsNDcuNCwzOS41LDUwLDM5LjV6IE02MS44LDY4SDUwYzAsMC0xMS44LDAtMTEuOCwwdi0xLjhjMC0xLjgsMC44LTguMSwxMC4xLTguMUg1MGgxLjcgICBjOS4zLDAsMTAuMSw2LjMsMTAuMSw4LjFWNjh6Ij48L3BhdGg+PHBhdGggZGlzcGxheT0iaW5saW5lIiBkPSJNNzQuNywyMUgyNS4zYy0yLjcsMC00LjgsMi4yLTQuOCw0Ljh2NDguM2MwLDIuNywyLjIsNC44LDQuOCw0LjhINTBWNTYuN2gtNi40di05LjZINTAgICB2LTYuNWMwLTUuMyw0LjMtOS42LDkuNi05LjZoMTB2OS42aC02LjhjLTEuNywwLTMuMSwxLjQtMy4xLDMuMXYzLjRoMTB2OS42aC0xMFY3OWgxNS4xYzIuNywwLDQuOC0yLjIsNC44LTQuOFYyNS45ICAgQzc5LjUsMjMuMiw3Ny40LDIxLDc0LjcsMjF6Ij48L3BhdGg+PGcgZGlzcGxheT0iaW5saW5lIj48cGF0aCBkPSJNNjcuOSwzNS4xQzU5LjcsMzUuMSw1Myw0MS44LDUzLDUwczYuNywxNC45LDE0LjksMTQuOVM4Mi44LDU4LjIsODIuOCw1MFM3Ni4xLDM1LjEsNjcuOSwzNS4xeiAgICAgTTY3LjksNTkuNWMtNS4yLDAtOS41LTQuMy05LjUtOS41czQuMy05LjUsOS41LTkuNXM5LjUsNC4zLDkuNSw5LjVTNzMuMSw1OS41LDY3LjksNTkuNXoiPjwvcGF0aD48cGF0aCBkPSJNMzIuMSwzNS4xYy04LjIsMC0xNC45LDYuNy0xNC45LDE0LjlzNi43LDE0LjksMTQuOSwxNC45UzQ3LDU4LjIsNDcsNTBTNDAuMywzNS4xLDMyLjEsMzUuMXoiPjwvcGF0aD48L2c+PHBhdGggZGlzcGxheT0iaW5saW5lIiBkPSJNNjkuNyw2Ny44Yy0xLjgsMS42LTQuMiwyLjYtNi44LDIuNmMtMi42LDAtNC45LTAuOS02LjctMi41Yy0wLjItMC4xLTAuMy0wLjMtMC41LTAuNSAgIGMtMS4xLTEuMy0xLjYtMy0xLjYtNC43VjQ3LjRoMTQuM1YzNS43SDU0LjFWMTkuM0g0My42bDAsMGMwLDcuNC02LDE2LjQtMTMuMywxNi40aDB2MTEuOGg4LjlsMCwxNy4yYzAsNC4zLDEuOCw4LjUsNSwxMS4zICAgYzMuNCwzLDcuOCw0LjcsMTIuNyw0LjdjNC45LDAsOS40LTEuOCwxMi44LTQuOFY2Ny44eiI+PC9wYXRoPjxwYXRoIGRpc3BsYXk9ImlubGluZSIgZD0iTTUwLDEuM0MyMy4xLDEuMywxLjMsMjMuMSwxLjMsNTBjMCwyNi45LDIxLjgsNDguNyw0OC43LDQ4LjdTOTguNyw3Ni45LDk4LjcsNTAgICBDOTguNywyMy4xLDc2LjksMS4zLDUwLDEuM3ogTTQ0LjcsNzVIMjYuOWMtMSwwLTEuOC0wLjgtMS44LTEuOFY1NS4zYzAtMSwwLjgtMS44LDEuOC0xLjhzMS44LDAuOCwxLjgsMS44djE1LjloMTUuOSAgIGMxLDAsMS44LDAuOCwxLjgsMS44UzQ1LjcsNzUsNDQuNyw3NXogTTc1LDQ0LjdjMCwxLTAuOCwxLjgtMS44LDEuOHMtMS44LTAuOC0xLjgtMS44VjI4LjdINTUuM2MtMSwwLTEuOC0wLjgtMS44LTEuOCAgIGMwLTEsMC44LTEuOCwxLjgtMS44aDE3LjhjMSwwLDEuOCwwLjgsMS44LDEuOFY0NC43eiI+PC9wYXRoPjxnIGRpc3BsYXk9ImlubGluZSI+PHBhdGggZD0iTTUwLDEuM0MyMy4xLDEuMywxLjMsMjMuMSwxLjMsNTBjMCwyNi45LDIxLjgsNDguNyw0OC43LDQ4LjdTOTguNyw3Ni45LDk4LjcsNTAgICAgQzk4LjcsMjMuMSw3Ni45LDEuMyw1MCwxLjN6IE03MS41LDU4LjVjMCw3LjEtNS44LDEyLjktMTIuOSwxMi45SDQxLjVjLTcuMSwwLTEyLjktNS44LTEyLjktMTIuOVY0MS41YzAtNy4xLDUuOC0xMi45LDEyLjktMTIuOSAgICBoMTcuMWM3LjEsMCwxMi45LDUuOCwxMi45LDEyLjlWNTguNXoiPjwvcGF0aD48cGF0aCBkPSJNMzIuMiw0MS41djE3LjFjMCw1LjEsNC4xLDkuMiw5LjIsOS4yaDYuN1YzMi4yaC02LjdDMzYuNCwzMi4yLDMyLjIsMzYuNCwzMi4yLDQxLjV6Ij48L3BhdGg+PHBhdGggZD0iTTUxLjgsNjcuOGg2LjdjNS4xLDAsOS4yLTQuMSw5LjItOS4ydi02LjdINTEuOFY2Ny44eiI+PC9wYXRoPjxwYXRoIGQ9Ik01OC41LDMyLjJoLTYuN3YxNS45aDE1Ljl2LTYuN0M2Ny44LDM2LjQsNjMuNiwzMi4yLDU4LjUsMzIuMnoiPjwvcGF0aD48L2c+PGcgZGlzcGxheT0iaW5saW5lIj48cGF0aCBkPSJNMzYsNDIuMWMtNC40LDAtNy45LDMuNi03LjksNy45YzAsNC40LDMuNiw3LjksNy45LDcuOWM0LjksMCw5LjYtNSwxMS44LTcuOUM0Niw0Ny43LDQxLjMsNDIuMSwzNiw0Mi4xeiAgICAiPjwvcGF0aD48cGF0aCBkPSJNNjQsNDIuMWMtNS4zLDAtMTAsNS42LTExLjgsNy45YzEuNywyLjMsNi41LDcuOSwxMS44LDcuOWM0LjQsMCw3LjktMy42LDcuOS03LjkgICAgQzcxLjksNDUuNiw2OC40LDQyLjEsNjQsNDIuMXoiPjwvcGF0aD48cGF0aCBkPSJNNTAsMS4zQzIzLjEsMS4zLDEuMywyMy4xLDEuMyw1MGMwLDI2LjksMjEuOCw0OC43LDQ4LjcsNDguN2MyNi45LDAsNDguNy0yMS44LDQ4LjctNDguNyAgICBDOTguNywyMy4xLDc2LjksMS4zLDUwLDEuM3ogTTY0LDYxLjZjLTYuMywwLTExLjUtNS40LTE0LTguNWMtMi41LDMuMS03LjcsOC41LTE0LDguNWMtNi40LDAtMTEuNi01LjItMTEuNi0xMS42ICAgIFMyOS42LDM4LjQsMzYsMzguNGM2LjMsMCwxMS41LDUuNCwxNCw4LjVjMi41LTMuMSw3LjctOC41LDE0LTguNWM2LjQsMCwxMS42LDUuMiwxMS42LDExLjZTNzAuNCw2MS42LDY0LDYxLjZ6Ij48L3BhdGg+PC9nPjxnIGRpc3BsYXk9ImlubGluZSI+PHBhdGggZD0iTTQzLjgsNzQuOUgyNS4xVjU2LjJjMC0xLjItMS0yLjItMi4yLTIuMmMtMS4yLDAtMi4yLDEtMi4yLDIuMlY3N2MwLDEuMiwxLDIuMiwyLjIsMi4yaDIwLjggICAgYzEuMiwwLDIuMi0xLDIuMi0yLjJDNDUuOSw3NS44LDQ0LjksNzQuOSw0My44LDc0Ljl6Ij48L3BhdGg+PHBhdGggZD0iTTc3LDIwLjhINTYuMmMtMS4yLDAtMi4yLDEtMi4yLDIuMnMxLDIuMiwyLjIsMi4yaDE4LjZ2MTguNmMwLDEuMiwxLDIuMiwyLjIsMi4yYzEuMiwwLDIuMi0xLDIuMi0yLjJWMjMgICAgQzc5LjIsMjEuOCw3OC4yLDIwLjgsNzcsMjAuOHoiPjwvcGF0aD48L2c+PHBhdGggZGlzcGxheT0iaW5saW5lIiBkPSJNNjAsMjQuOUg0MGMtOC4zLDAtMTUuMSw2LjgtMTUuMSwxNS4xdjIwYzAsOC4zLDYuOCwxNS4xLDE1LjEsMTUuMWgyMCAgIGM4LjMsMCwxNS4xLTYuOCwxNS4xLTE1LjFWNDBDNzUuMSwzMS43LDY4LjMsMjQuOSw2MCwyNC45eiBNNzAuOCw0MHY3LjhINTIuMlYyOS4ySDYwQzY1LjksMjkuMiw3MC44LDM0LjEsNzAuOCw0MHogTTI5LjIsNjBWNDAgICBjMC02LDQuOC0xMC44LDEwLjgtMTAuOGg3Ljh2NDEuNkg0MEMzNC4xLDcwLjgsMjkuMiw2NS45LDI5LjIsNjB6IE02MCw3MC44aC03LjhWNTIuMmgxOC42VjYwQzcwLjgsNjUuOSw2NS45LDcwLjgsNjAsNzAuOHoiPjwvcGF0aD48cGF0aCBkaXNwbGF5PSJpbmxpbmUiIGQ9Ik02Ni40LDM2LjRjLTcuNCwwLTEzLjUsNi4zLTE2LjQsOS45Yy0yLjktMy42LTktOS45LTE2LjQtOS45Yy03LjUsMC0xMy42LDYuMS0xMy42LDEzLjYgICBzNi4xLDEzLjYsMTMuNiwxMy42YzcuNCwwLDEzLjUtNi4zLDE2LjQtOS45YzIuOSwzLjYsOSw5LjksMTYuNCw5LjljNy41LDAsMTMuNi02LjEsMTMuNi0xMy42UzczLjksMzYuNCw2Ni40LDM2LjR6IE0zMy42LDU5LjMgICBjLTUuMSwwLTkuMy00LjItOS4zLTkuM3M0LjItOS4zLDkuMy05LjNjNi4yLDAsMTEuNyw2LjYsMTMuNyw5LjNDNDQuOSw1My40LDM5LjMsNTkuMywzMy42LDU5LjN6IE02Ni40LDU5LjMgICBjLTYuMiwwLTExLjctNi41LTEzLjctOS4zYzItMi43LDcuNS05LjMsMTMuNy05LjNjNS4xLDAsOS4zLDQuMiw5LjMsOS4zUzcxLjUsNTkuMyw2Ni40LDU5LjN6Ij48L3BhdGg+PGcgZGlzcGxheT0iaW5saW5lIj48cGF0aCBkPSJNNTAsNC43QzI1LDQuNyw0LjcsMjUsNC43LDUwUzI1LDk1LjMsNTAsOTUuM1M5NS4zLDc1LDk1LjMsNTBTNzUsNC43LDUwLDQuN3ogTTUwLDg5LjkgICAgQzI4LDg5LjksMTAuMSw3MiwxMC4xLDUwUzI4LDEwLjEsNTAsMTAuMVM4OS45LDI4LDg5LjksNTBTNzIsODkuOSw1MCw4OS45eiI+PC9wYXRoPjxwYXRoIGQ9Ik02Ny42LDUyLjNMNDkuNyw0MS41aDBsMy42LTIzLjljMC4yLTEuNC0xLjctMi4xLTIuNC0wLjlMMzIsNDUuOWMtMC40LDAuNi0wLjIsMS41LDAuNCwxLjlsMTcuOCwxMC44aDAgICAgbC0zLjYsMjMuOWMtMC4yLDEuNCwxLjcsMi4xLDIuNCwwLjlMNjgsNTQuMUM2OC40LDUzLjUsNjguMiw1Mi42LDY3LjYsNTIuM3oiPjwvcGF0aD48L2c+PGcgZGlzcGxheT0iaW5saW5lIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjI3LjciIHI9IjYuNCI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iNi40Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1MCIgY3k9IjcyLjMiIHI9IjYuNCI+PC9jaXJjbGU+PC9nPjxnIGRpc3BsYXk9ImlubGluZSI+PHJlY3QgeD0iNjcuNyIgeT0iNDUuMyIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiPjwvcmVjdD48cmVjdCB4PSI0NS4zIiB5PSI0NS4zIiB3aWR0aD0iOS41IiBoZWlnaHQ9IjkuNSI+PC9yZWN0PjxyZWN0IHg9IjIyLjkiIHk9IjQ1LjMiIHdpZHRoPSI5LjUiIGhlaWdodD0iOS41Ij48L3JlY3Q+PHJlY3QgeD0iNjcuNyIgeT0iNjcuNyIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiPjwvcmVjdD48cmVjdCB4PSI0NS4zIiB5PSI2Ny43IiB3aWR0aD0iOS41IiBoZWlnaHQ9IjkuNSI+PC9yZWN0PjxyZWN0IHg9IjIyLjkiIHk9IjY3LjciIHdpZHRoPSI5LjUiIGhlaWdodD0iOS41Ij48L3JlY3Q+PHJlY3QgeD0iNjcuNyIgeT0iMjIuOSIgd2lkdGg9IjkuNSIgaGVpZ2h0PSI5LjUiPjwvcmVjdD48cmVjdCB4PSI0NS4zIiB5PSIyMi45IiB3aWR0aD0iOS41IiBoZWlnaHQ9IjkuNSI+PC9yZWN0PjxyZWN0IHg9IjIyLjkiIHk9IjIyLjkiIHdpZHRoPSI5LjUiIGhlaWdodD0iOS41Ij48L3JlY3Q+PC9nPjxnIGRpc3BsYXk9ImlubGluZSI+PHJlY3QgeD0iMTguNyIgeT0iMjEuMiIgd2lkdGg9IjcuOSIgaGVpZ2h0PSI3LjkiPjwvcmVjdD48cmVjdCB4PSIxOC43IiB5PSI0Ni4xIiB3aWR0aD0iNy45IiBoZWlnaHQ9IjcuOSI+PC9yZWN0PjxyZWN0IHg9IjE4LjciIHk9IjcxIiB3aWR0aD0iNy45IiBoZWlnaHQ9IjcuOSI+PC9yZWN0PjxyZWN0IHg9IjMzLjEiIHk9IjIzLjYiIHdpZHRoPSI0OC4yIiBoZWlnaHQ9IjIuOSI+PC9yZWN0PjxyZWN0IHg9IjMzLjEiIHk9IjQ4LjYiIHdpZHRoPSI0OC4yIiBoZWlnaHQ9IjIuOSI+PC9yZWN0PjxyZWN0IHg9IjMzLjEiIHk9IjczLjUiIHdpZHRoPSI0OC4yIiBoZWlnaHQ9IjIuOSI+PC9yZWN0PjwvZz48L2c+PGc+PGc+PHBhdGggZD0iTTU5LjEsNTguNUg0MC45Yy0yLjksMC01LjMsMi40LTUuMyw1LjR2NC4yaDMuMnYtNC4yYzAtMS4yLDAuOS0yLjEsMi0yLjFoMTguMmMxLjEsMCwyLDEsMiwyLjF2NC4yaDMuMiAgICB2LTQuMkM2NC40LDYwLjksNjIsNTguNSw1OS4xLDU4LjV6Ij48L3BhdGg+PHBhdGggZD0iTTUwLDU1YzQuNiwwLDguNC0zLjgsOC40LTguNHMtMy44LTguNC04LjQtOC40cy04LjQsMy44LTguNCw4LjRTNDUuNCw1NSw1MCw1NXogTTUwLDQxLjUgICAgYzIuOCwwLDUuMSwyLjMsNS4xLDUuMWMwLDIuOC0yLjMsNS4xLTUuMSw1LjFzLTUuMS0yLjMtNS4xLTUuMUM0NC45LDQzLjgsNDcuMiw0MS41LDUwLDQxLjV6Ij48L3BhdGg+PHBhdGggZD0iTTc5LjUsMjQuM2gtMThjLTAuOCwwLTEuNi0wLjMtMi4xLTAuOWwtNi4yLTYuMmMtMC44LTAuOC0yLTEuMy0zLjEtMS4zcy0yLjMsMC41LTMuMSwxLjNsLTYuMiw2LjIgICAgYy0wLjYsMC42LTEuMywwLjktMi4xLDAuOWgtMThjLTQsMC03LjMsMy4zLTcuMyw3LjN2NDUuNGMwLDQsMy4zLDcuMyw3LjMsNy4zaDU5YzQsMCw3LjMtMy4zLDcuMy03LjNWMzEuNSAgICBDODYuOCwyNy41LDgzLjUsMjQuMyw3OS41LDI0LjN6IE04My41LDc2LjljMCwyLjItMS44LDQtNCw0aC01OWMtMi4yLDAtNC0xLjgtNC00VjMxLjVjMC0yLjIsMS44LTQsNC00aDE4YzEuNywwLDMuMy0wLjcsNC40LTEuOCAgICBsNi4yLTYuMmMwLjUtMC41LDEuMy0wLjUsMS43LDBsNi4yLDYuMmMxLjIsMS4yLDIuOCwxLjgsNC40LDEuOGgxOGMyLjIsMCw0LDEuOCw0LDRWNzYuOXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==" alt="">
+                </div>
+            </div>
+            <div id="image-posts">
+                <div class="posts-row">
+                    <div class="post row">
+                        <img src="./img/sunset.jpeg" alt="">
+                        <div class="row-icon">
+                            <img src="./img/row-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="post row">
+                        <img src="./img/festival.jpeg" alt="">
+                        <div class="row-icon">
+                            <img src="./img/row-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./img/casal.jpg" alt="">
+                    </div>
+                </div>
+                <div class="posts-row">
+                    <div class="post row">
+                        <img src="./img/mocs.png" alt="">
+                        <div class="row-icon">
+                            <img src="./img/row-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./img/person.png" alt="">
+                    </div>
+                    <div class="post">
+                        <img src="./img/friends.png" alt="">
+                    </div>
+                </div>
+                <div class="posts-row">
+                    <div class="post row">
+                        <img src="./img/festival.jpeg" alt="">
+                        <div class="row-icon">
+                            <img src="./img/row-icon.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <img src="./img/casal.jpg" alt="">
+                    </div>
+                    <div class="post row">
+                        <img src="./img/mocs.png" alt="">
+                        <div class="row-icon">
+                            <img src="./img/row-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
